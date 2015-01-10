@@ -1,7 +1,7 @@
 ## Neo4J dependency: dockerfile/java
 ## get java from trusted build
 from dockerfile/java
-maintainer Tiago Pires, tandrepires@gmail.com
+maintainer Chris Hiestand, chrishiestand@gmail.com
 
 ## install neo4j according to http://www.neo4j.org/download/linux
 # Import neo4j signing key

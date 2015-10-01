@@ -1,6 +1,6 @@
 ## Neo4J dependency: java
 ## get java from official repo
-from java:latest
+from java:8-jre
 maintainer Chris Hiestand, chrishiestand@gmail.com
 
 ## install neo4j according to http://www.neo4j.org/download/linux

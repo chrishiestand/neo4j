@@ -1,13 +1,9 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 NEO4J_HOME=/var/lib/neo4j
 
 sed -i "s|#org.neo4j.server.webserver.address=0.0.0.0|org.neo4j.server.webserver.address=$HOSTNAME|g" $NEO4J_HOME/conf/neo4j-server.properties
 
-
-=======
->>>>>>> pin to 2.2.5
 # doing this conditionally in case there is already a limit higher than what
 # we're setting here. neo4j recommends at least 40000.
 #
@@ -16,10 +12,5 @@ limit=`ulimit -n`
 if [ "$limit" -lt 65536 ]; then
     ulimit -n 65536;
 fi
-<<<<<<< HEAD
-=======
-
-.$NEO4J_HOME/bin/neo4j console
->>>>>>> pin to 2.2.5
 
 .$NEO4J_HOME/bin/neo4j console
